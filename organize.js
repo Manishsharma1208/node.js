@@ -33,8 +33,9 @@ function organize(srcpath){
 
     //5. traverse over all the files and classify on the basis of extention(.pdf,.mp3,.mp4,.exe)
     for(let i=0;i<allfiles.length;i++){
-        let ext =allfiles[i].split(".")[1];
-        console.log(ext);
+       // let ext =allfiles[i].split(".")[1]; //1. isliye kyuki hi=ume .exe,.mo4,.mp3 chaiye
+       let ext =path.extname(allfiles[i]); 
+       console.log(ext);
     }
 }
 
